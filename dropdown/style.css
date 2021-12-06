@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  display: flex;
+  gap: 20px;
+  background-color: steelblue;
+}
+.nav__item {
+  background-color: orchid;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown--nav:hover .dropdown__list--nav {
+  display: initial;
+}
+.dropdown--submenu:hover .dropdown__list--submenu {
+  display: initial;
+}
+.dropdown__list {
+  background-color: orange;
+  top: 100%;
+  position: absolute;
+  display: none;
+  right: 0;
+}
